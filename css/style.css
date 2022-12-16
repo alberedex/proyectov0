@@ -30,7 +30,8 @@
 .article__figure:hover{
     border: 2px solid white;
     box-shadow: 1px  1px 10px;
-    border-radius: 0px 0px 5px 5px; 
+    border-radius: 0px 0px 5px 5px;
+
 }
 
 .article__figure{
@@ -54,6 +55,10 @@
     text-align: center;
     margin-top: -5px;
     padding: 0;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.main--title{
+    text-align: center;
 }
 

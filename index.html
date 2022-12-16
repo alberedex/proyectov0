@@ -16,13 +16,13 @@
 <body>
     <div class="body">
 
-
         <header class="header">
             <a class="header__logo--link" href="./pagInicial.html"><img class="header__logo" src="img/logo2.png" alt=""></a>
 
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="nav__list"><a href="#">Peliculas</a></li>
+                    <li class="nav__list"><a href="#" onclick="visibilidad('main')">Inicio</a></li>
+                    <li class="nav__list"><a href="#" onclick="visibilidad('mainPeliculas')">Peliculas</a></li>
                     <li class="nav__list"><a href="#">Series</a></li>
                     <li class="nav__list list__buscador">
                         <img src="img/lupa.png" alt="">
@@ -34,10 +34,11 @@
             <a class="button" href="./pagInicial.html">Cerrar Sesión</a>
         </header>
 
-        <main class="main">
+        <main class="main" id="mainPeliculas">
             <div class="main__principal">
                 <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
             </div>
+            
             <section class="main__section">
                 <h2 class="section__title">Terror</h2>
                 <article class="section__article">
@@ -103,6 +104,53 @@
                     </figure>
                 </article>
             </section>
+        </main>
+
+        <main class="main__Principal" id="main">
+            <div class="main__principal">
+                <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
+            </div>
+            <h1 class="main--title">Bienvenido Usuari@!</h1>
+            <section class="main__section">
+                <h2 class="section__title">Peliculas</h2>
+                <article class="section__article">
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="main__section">
+                <h2 class="section__title">Series</h2>
+                <article class="section__article">
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <span class="figure__title">The Boys!</span>
+                    </figure>
+                </article>
+            </section>
+
         </main>
 
         <footer class="footer">

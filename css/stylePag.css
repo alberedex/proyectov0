@@ -4,6 +4,7 @@
 html {
     width: 100%;
     font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
 }
 
 /* HEADER  */
