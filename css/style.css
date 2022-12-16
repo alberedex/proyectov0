@@ -23,7 +23,6 @@
 .section__article{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     padding: 0px;
     margin: 0px;
 }
@@ -32,6 +31,10 @@
     padding: 0px;
     margin: 0;
     margin-right: 5px;
+    width: 18%;
 }
 
+.figure__img{
+    width: 100%;
+}
 
