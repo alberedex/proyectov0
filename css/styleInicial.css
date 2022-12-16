@@ -7,8 +7,11 @@
 
     background-color: black;
     color: white;
-    border-bottom: 5px solid rgb(43, 43, 43);
+    border-bottom: 2px solid rgb(43, 43, 43);
+    box-shadow: -1px -1px 10px;
+
 }
+/* rgb(43, 43, 43) */
 
 .section__article{
     padding: 40px;
@@ -25,4 +28,13 @@
 
 .article__subtitle{
     font-size: 20px;
+}
+
+.article__link{
+    color: #8b8bff;
+    text-decoration: underline;
+}
+
+.article__link:hover{
+    color: #FF331F;
 }
