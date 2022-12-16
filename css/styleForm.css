@@ -45,3 +45,10 @@
 .input__required{
     color: red;
 }
+
+#form__message{
+    border-radius: 20px;
+    background-color: #FF331F;
+    padding: 5px;
+    text-align: center;
+}

@@ -1,14 +1,18 @@
 
 const message = document.getElementById('form__message');
 
-const pass = document.getElementById('pass').value;
-const pass2 = document.getElementById('passx2').value;
+const formulario = document.querySelector('form');
 
-function validarPass(){
-    if(pass === pass2){
-        return true;
-    }else{
-        message.innerHTML = "Introduca mismo contraseña";
-        return false;
-    }
-}
+message.style.display = "none"
+
+formulario.addEventListener("submit",
+    function (event) {
+        let pass = document.getElementById('pass').value;
+        let pass2 = document.getElementById('passx2').value;
+
+        if (pass !== pass2) {
+            message.style.display = "block"
+            message.innerHTML = "Introduca mismo contraseña";
+            event.preventDefault();
+        }
+    });

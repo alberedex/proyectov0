@@ -25,7 +25,7 @@
 
         <main class="main">
             
-            <form class="form" onsubmit="return validarPass()" method="get" action="/index.html" >
+            <form class="form" id="form" method="get" action="/index.html">
                 <p class="form__title">Registro</p>
 
                 <input class="form__input" type="text" name="Nombre" id="Nombre" placeholder="Nombre" pattern="^[a-zA-Z]{3,}$" title="Introduca el nombre correcto" required>
@@ -40,12 +40,11 @@
                 
                 <input class="form__input" type="password" name="passx2" id="passx2" placeholder="Repite Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
                 <div>
-
                     <input class="form__input" type="checkbox" name="chk__terminos" id="chk__terminos" required><label for="chk__terminos">  Acepto las <a href="#">condiciones</a> del uso del servicio<span class="input__required">*</span></label>
                 </div>
-                <div class="form__message"></div>
+                <div id="form__message"></div>
                 
-                <input class="button form__button" type="submit" value="Crear cuenta" name="sign">
+                <input class="button form__button" type="submit" value="Crear cuenta" id="submit" name="submit">
                 <a class="form__button" href="/inicioSesion.html">Iniciar Sesion</a>
             </form>
 

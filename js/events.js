@@ -1,14 +1,15 @@
-const test = document.getElementById("article__figureid");
+
+// const test = document.getElementsByClassName("section__article");
 
 
-test.addEventListener("mouseenter", (event) => {
+// test.addEventListener("mouseenter", (event) => {
 
-    // event.target.style.border = "20px solid purple";
+//     // event.target.style.border = "20px solid purple";
 
-}, false);
+// }, false);
 
-test.addEventListener("mouseover", (event) => {
+// test.addEventListener("mouseover", (event) => {
 
-    // event.target.style.border = "1px solid orange";
+//     // event.target.style.border = "1px solid orange";
 
-}, false);
+// }, false);
