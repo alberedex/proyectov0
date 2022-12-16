@@ -1,0 +1,28 @@
+.main__section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    background-color: black;
+    color: white;
+    border-bottom: 5px solid rgb(43, 43, 43);
+}
+
+.section__article{
+    padding: 40px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.article__title{
+    font-size: 50px;
+}
+
+.article__subtitle{
+    font-size: 20px;
+}
