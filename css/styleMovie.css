@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 40%;
     height: 60%;
-    padding: 70px;
+    padding: 90px;
     position: relative;
     color: white;
     text-shadow: 1px 2px 1px black;
@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .boton__pelicula{
     border: 1px solid black;
     width: 50px;
