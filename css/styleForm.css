@@ -5,7 +5,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     justify-content: center;
     align-content: center;
 
@@ -20,7 +20,6 @@
 }
 
 .form__title{
-    font-family: 'Sora', sans-serif;
     font-weight:bold;
     text-align: center;
     font-size: 32px;

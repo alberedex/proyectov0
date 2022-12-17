@@ -1,0 +1,42 @@
+.pelicula{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    padding: 70px;
+    position: relative;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+}
+
+.figure__lists{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.figure__lists>li{
+    padding-left: 20px;
+}
+
+.pelicula__back{
+    width: 100%;
+    position: absolute;
+}
+.pelicula__boton{
+    display: flex;
+    flex-direction: row;
+}
+.boton__pelicula{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px 15px 0px;
+
+}

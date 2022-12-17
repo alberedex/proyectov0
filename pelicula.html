@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream</title>
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylePag.css">
     <link rel="stylesheet" href="css/styleBrowse.css">
+    <link rel="stylesheet" href="css/styleMovie.css">
 
 </head>
 
@@ -21,8 +22,8 @@
 
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="nav__list"><a href="#" onclick="visibilidad('main')">Inicio</a></li>
-                    <li class="nav__list"><a href="#" onclick="visibilidad('mainPeliculas')">Peliculas</a></li>
+                    <li class="nav__list"><a href="./browse.html">Inicio</a></li>
+                    <li class="nav__list"><a href="#">Peliculas</a></li>
                     <li class="nav__list"><a href="#">Series</a></li>
                     <li class="nav__list list__buscador">
                         <img src="img/lupa.png" alt="">
@@ -35,23 +36,49 @@
         </header>
 
         <main class="main" id="mainPeliculas">
-            <div class="main__principal">
-                <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
-            </div>
+
+            <img class="pelicula__back" src="./img/dementia1307.jpg" alt="">
+            <section class="pelicula">
+                <img class="pelicula__logo" src="img/pelicula_logo.png" alt="">
+                <ul class="figure__lists">
+                    <li class="figure__list">16+</li>
+                    <li class="figure__list">1963</li>
+                    <li class="figure__list">Terror/Suspenso</li>
+                    <li class="figure__list">1h 15m</li>
+                </ul>
+                <div class="pelicula__boton">
+                    <div class="boton__pelicula">▶</div>
+                    <div class="boton__pelicula">+</div>
+                </div>
+                <span class="figure__summary">Anualmente, el matrimonio Haloran cumple con un siniestro ritual:
+                    rememora en Irlanda la muerte de Kethleen, su hija. Este año, sin embargo, un asesino está
+                    suelto en las inmediaciones del castillo Haloran llevando a cabo una terrible carnicería.</span>
+                <span class="figure__reparto">
+                    <h3 class="figure__reparto--title">Reparto</h3>
+                    <ul class="figure__lists figure__repartos">
+                        <li class="figure__reparto">Bart Patton</li>
+                        <li class="figure__reparto">Luana Anders</li>
+                        <li class="figure__reparto">William Campbell</li>
+                        <li class="figure__reparto">Mary Mitchel</li>
+                    </ul>
+                </span>
+
+            </section>
+
             <h1 class="main--title">Peliculas</h1>
             <section class="main__section">
                 <h2 class="section__title">Terror</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -61,19 +88,19 @@
                 <h2 class="section__title">Comedia</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -83,74 +110,27 @@
                 <h2 class="section__title">Suspense</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
+                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
             </section>
-        </main>
-
-        <main class="main__Principal" id="main">
-            <div class="main__principal">
-                <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
-            </div>
-            <h1 class="main--title">Bienvenido Usuari@!</h1>
-            <section class="main__section">
-                <h2 class="section__title">Peliculas</h2>
-                <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                </article>
-            </section>
-
-            <section class="main__section">
-                <h2 class="section__title">Series</h2>
-                <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                </article>
-            </section>
-
         </main>
 
         <footer class="footer">
@@ -181,7 +161,6 @@
             <span class="footer__copy">©2022 - Alberto Redondo Sanchez - DIW</span>
         </footer>
     </div>
-    <script src="js/events.js"></script>
 </body>
 
 </html>
