@@ -6,149 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream</title>
-    
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylePag.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/styleInicial.css">
 </head>
 
 <body>
     <div class="body">
 
-        <header class="header">
-            <a class="header__logo--link" href="./pagInicial.html"><img class="header__logo" src="img/logo2.png" alt=""></a>
 
-            <nav class="header__nav">
-                <ul class="header__nav__list">
-                    <li class="nav__list"><a href="#" onclick="visibilidad('main')">Inicio</a></li>
-                    <li class="nav__list"><a href="#" onclick="visibilidad('mainPeliculas')">Peliculas</a></li>
-                    <li class="nav__list"><a href="#">Series</a></li>
-                    <li class="nav__list list__buscador">
-                        <img src="img/lupa.png" alt="">
-                        <input class="input--buscador" type="text" name="buscador" placeholder="Buscar...">
-                    </li>
-                </ul>
-            </nav>
-            <a class="button" href="#">Cuenta</a>
-            <a class="button" href="./pagInicial.html">Cerrar Sesión</a>
+        <header class="header">
+            <a class="header__logo--link" href="./index.html"><img class="header__logo" src="img/logo2.png" alt=""></a>
+            <span></span>
+            <a class="button" href="./inicioSesion.html">Iniciar Sesión</a>
+            <a class="button" href="./registro.html">Registrarte</a>
         </header>
 
-        <main class="main" id="mainPeliculas">
-            <div class="main__principal">
-                <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
-            </div>
+        <main class="main">
             
             <section class="main__section">
-                <h2 class="section__title">Terror</h2>
                 <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
+                    <span class="article__title">Disfruta de Player en tu PC</span>
+                    <span class="article__subtitle">Donde sea</span>
                 </article>
+                <figure class="article__figure">
+                    <img class="figure__img" src="img/Area-Creativa-removebg-preview.png" alt="">
+                </figure>
             </section>
 
             <section class="main__section">
-                <h2 class="section__title">Comedia</h2>
                 <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
+                    <span class="article__title">Reproducción simultánea</span>
+                    <span class="article__subtitle">Desde tres dispositivos diferentes al mismo tiempo.</span>
                 </article>
+                <figure class="article__figure">
+                    <img class="figure__img" src="img/users.png" alt="">
+                </figure>
             </section>
 
             <section class="main__section">
-                <h2 class="section__title">Suspense</h2>
                 <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
+                    <span class="article__title">Máxima calidad</span>
+                    <span class="article__subtitle">Tus contenidos a la máxima calidad disponible.</span>
                 </article>
-            </section>
-        </main>
-
-        <main class="main__Principal" id="main">
-            <div class="main__principal">
-                <img class="principal__banner" src="img/thor_ragnarok_2017_movie_8k.jpg" alt="">
-            </div>
-            <h1 class="main--title">Bienvenido Usuari@!</h1>
-            <section class="main__section">
-                <h2 class="section__title">Peliculas</h2>
-                <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                </article>
+                <figure class="article__figure">
+                    <img class="figure__img" src="img/4k.png" alt="">
+                </figure>
             </section>
 
             <section class="main__section">
-                <h2 class="section__title">Series</h2>
                 <article class="section__article">
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/serie.webp" alt=""></a>
-                        <span class="figure__title">The Boys!</span>
-                    </figure>
+                    <span class="article__title">¿Eres nuevo? <a class="article__link" href="./registro.html">Registrarte 🡵</a></span>
                 </article>
+                <article class="section__article">
+                    <span class="article__title">¿Ya tiene una cuenta? <a class="article__link" href="./inicioSesion.html">Iniciar sesión 🡵</a></span>
+                </article>
+                <!-- <figure class="article__figure">
+                    <a class="button" href="/registro.html">Registrarte</a>
+                </figure> -->
             </section>
 
         </main>
@@ -171,7 +87,6 @@
             <span class="footer__copy">©2022 - Alberto Redondo Sanchez - DIW</span>
         </footer>
     </div>
-    <script src="js/events.js"></script>
 </body>
 
 </html>
