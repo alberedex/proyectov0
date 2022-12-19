@@ -1,4 +1,4 @@
-.pelicula{
+.main__pelicula{
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -9,21 +9,21 @@
     text-shadow: 1px 2px 1px black;
 }
 
-.figure__lists{
+.main__figure__lists{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.figure__lists>li{
+.main__figure__lists>li{
     padding-left: 20px;
 }
 
-.pelicula__back{
+.main__pelicula__back{
     width: 100%;
     position: absolute;
 }
-.pelicula__boton{
+.main__pelicula__boton{
     display: flex;
     flex-direction: row;
 }
