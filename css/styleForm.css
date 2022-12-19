@@ -51,3 +51,7 @@
     padding: 5px;
     text-align: center;
 }
+
+.body{
+    background-image: linear-gradient(to right, #3626a7, #6c35bd, #9a46d2, #c659e6, #f26df9);
+}
