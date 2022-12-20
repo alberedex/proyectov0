@@ -28,10 +28,11 @@
             
             <form class="form" method="get" action="./browse.html">
                 <p class="form__title">Iniciar Sesión</p>
+                <label for="email">Correo Electronico</label>
+                <input class="form__input" type="text" name="email" id="email" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,}$" title="Introduca el email correcto" required>
 
-                <input class="form__input" type="text" name="email" id="email" placeholder="Correo electronico" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,}$" title="Introduca el email correcto" required>
-
-                <input class="form__input" type="password" name="pass" id="pass" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                <label for="pass">Contraseña</label>
+                <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
 
                 <input class="button form__button" type="submit" value="Iniciar Sesión" name="sign">
                 <a class="form__button" href="./registro.html">Registrarte</a>

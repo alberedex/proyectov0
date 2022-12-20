@@ -28,18 +28,23 @@
             
             <form class="form" id="form" method="get" action="./browse.html">
                 <p class="form__title">Registro</p>
+                <label for="Nombre">Nombre</label>
+                <input class="form__input" type="text" name="Nombre" id="Nombre" pattern="^[a-zA-Z]{3,}$" title="Introduca el nombre correcto" required>
 
-                <input class="form__input" type="text" name="Nombre" id="Nombre" placeholder="Nombre" pattern="^[a-zA-Z]{3,}$" title="Introduca el nombre correcto" required>
-
-                <input class="form__input" type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos" pattern="^[a-z A-Z]{3,}$" title="Introduca los Apellidos correctos" required>
+                <label for="Apellidos">Apellidos</label>
+                <input class="form__input" type="text" name="Apellidos" id="Apellidos" pattern="^[a-z A-Z]{3,}$" title="Introduca los Apellidos correctos" required>
                 
-                <input class="form__input" type="text" name="DNI" id="DNI" placeholder="DNI" pattern="^[0-9]{8}[a-zA-Z]{1}$" title="Introduca el DNI correcto" required>
+                <label for="DNI">DNI</label>
+                <input class="form__input" type="text" name="DNI" id="DNI" pattern="^[0-9]{8}[a-zA-Z]{1}$" title="Introduca el DNI correcto" required>
 
-                <input class="form__input" type="text" name="email" id="email" placeholder="Correo electronico" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,}$" title="Introduca el email correcto" required>
+                <label for="email">Correo electronico</label>
+                <input class="form__input" type="email" name="email" id="email" title="Introduca el email correcto" required>
 
-                <input class="form__input" type="password" name="pass" id="pass" placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                <label for="pass">Contraseña</label>
+                <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
                 
-                <input class="form__input" type="password" name="passx2" id="passx2" placeholder="Repite Contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                <label for="passx2">Repite Contraseña</label>
+                <input class="form__input" type="password" name="passx2" id="passx2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
                 <div>
                     <input class="form__input" type="checkbox" name="chk__terminos" id="chk__terminos" required><label for="chk__terminos">  Acepto las <a href="#">condiciones</a> del uso del servicio<span class="input__required">*</span></label>
                 </div>
