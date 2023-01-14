@@ -32,6 +32,17 @@
     text-align: center;
 }
 
+/*Mejorada, que muestre en rojo en caso que sea incorrecto en focus*/
+.form__input:invalid:focus{
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.425);
+}
+
+.form__input:valid{
+    background-color: rgba(0, 255, 21, 0.425);
+    border-color: green;
+}
+
 .form__input{
     border-radius: 20px;
     padding: 10px;

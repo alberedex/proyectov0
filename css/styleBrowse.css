@@ -51,6 +51,10 @@
     width: 100%;
 }
 
+main{
+    padding-bottom: 1px;
+}
+
 .figure__title{
     width: 100%;
     background-color: white;
