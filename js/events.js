@@ -1,7 +1,9 @@
 
 peliculas = document.getElementById("mainPeliculas");
 principal = document.getElementById("main");
-peliculas.style.display = "none";
+if(peliculas != undefined){
+    peliculas.style.display = "none";
+}
 
 
 linkPeliculas = document.getElementById("link__peliculas");
@@ -14,4 +16,15 @@ function visibilidad(elem){
 
     
     contenedor.style.display = "block";
+}
+
+
+// Nueva funcionalidad
+function mostrarContrasena() {
+	var campo = document.getElementById("pass");
+	if (campo.type == "password") {
+		campo.type = "text";
+	} else {
+		campo.type = "password";
+	}
 }

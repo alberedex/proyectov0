@@ -43,7 +43,7 @@
     border-color: green;
 }
 
-.form__input{
+.form__input,.pass__img>img{
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
@@ -65,4 +65,15 @@
 
 .body{
     background-image: linear-gradient(to right, #3626a7, #6c35bd, #9a46d2, #c659e6, #f26df9);
+}
+
+.form__pass{
+    display: grid;
+    grid-template-columns: 87% 10%;
+    align-items: center;
+}
+
+.pass__img>img{
+    width: 40px;
+    background-color: #e0e0e0;
 }

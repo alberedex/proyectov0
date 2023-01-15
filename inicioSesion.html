@@ -18,22 +18,19 @@
 
 
         <header class="header">
-            <div itemscope itemtype="https://schema.org/ImageObject">
-                <a class="header__logo--link" href="./index.html">
-                    <img class="header__logo" src="img/logo2.png" alt="" itemprop="contentUrl">
-                </a>
-
+            <a class="header__logo--link" href="./index.html" itemscope itemtype="https://schema.org/ImageObject">
+                <img class="header__logo" src="img/logo2.png" alt="" itemprop="contentUrl">
                 <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
                     <meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                 </div>
 
-                <div itemprop="copyrightNotice" content="Attribution-NonCommercial-ShareAlike 4.0 International. You are free to: Share and Adapt">
-                </div>
-
+                <meta itemprop="copyrightNotice" content="Attribution-NonCommercial-ShareAlike 4.0 International. You are free to: Share and Adapt">
+                
                 <div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
                     <meta itemprop="name" content="AlbertoRedondoSanchez">
                 </div>
-            </div>
+            </a>
+
             <span></span>
             <a class="button" href="./inicioSesion.html">Iniciar Sesión</a>
             <a class="button" href="./registro.html">Registrarte</a>
@@ -47,8 +44,10 @@
                 <input class="form__input" type="text" name="email" id="email" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]{2,}$" title="Introduca el email correcto" required>
 
                 <label for="pass">Contraseña</label>
-                <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
-
+                <div class="form__pass">
+                    <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                    <a class="pass__img" href="#" type="button" onclick="mostrarContrasena()"><img src="./img/eye-g54bdd5feb_640.png" alt=""></a>
+                </div>
                 <input class="button form__button" type="submit" value="Iniciar Sesión" name="sign">
                 <a class="form__button" href="./registro.html">Registrarte</a>
             </form>
@@ -98,6 +97,7 @@
             <span class="footer__copy">©2022/2023 - Alberto Redondo Sanchez - DIW</span>
         </footer>
     </div>
+    <script src="js/events.js"></script>
 </body>
 
 </html>
