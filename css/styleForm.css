@@ -34,13 +34,13 @@
 
 /*Mejorada, que muestre en rojo en caso que sea incorrecto en focus*/
 .form__input:invalid:focus{
-    border-color: red;
-    background-color: rgba(255, 0, 0, 0.425);
+    background-color: rgba(255, 0, 0, 0.055);
+    outline: 2px solid rgb(172, 0, 0);
 }
 
 .form__input:valid{
-    background-color: rgba(0, 255, 21, 0.425);
-    border-color: green;
+    background-color: rgba(0, 255, 21, 0.055);
+    outline: 2px solid rgb(0, 121, 10);
 }
 
 .form__input,.pass__img>img{
