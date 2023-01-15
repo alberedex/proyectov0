@@ -2,8 +2,9 @@
 const message = document.getElementById('form__message');
 
 const formulario = document.querySelector('form');
-
-message.style.display = "none"
+if(message != undefined){
+    message.style.display = "none"
+}
 
 formulario.addEventListener("submit",
     function (event) {
@@ -16,3 +17,14 @@ formulario.addEventListener("submit",
             event.preventDefault();
         }
     });
+
+
+// Nueva funcionalidad
+function mostrarContrasena() {
+	var campo = document.getElementById("pass");
+	if (campo.type == "password") {
+		campo.type = "text";
+	} else {
+		campo.type = "password";
+	}
+}

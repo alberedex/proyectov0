@@ -17,14 +17,3 @@ function visibilidad(elem){
     
     contenedor.style.display = "block";
 }
-
-
-// Nueva funcionalidad
-function mostrarContrasena() {
-	var campo = document.getElementById("pass");
-	if (campo.type == "password") {
-		campo.type = "text";
-	} else {
-		campo.type = "password";
-	}
-}
