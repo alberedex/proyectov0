@@ -28,3 +28,14 @@ function mostrarContrasena() {
 		campo.type = "password";
 	}
 }
+
+
+let inputs = document.getElementsByTagName('input');
+
+for (const input of inputs) {
+    input.addEventListener('keydown', function (event) {
+        if (event.target.value.length >= 0) {
+            event.target.classList.add("form__input_insert");
+        }
+    });
+}

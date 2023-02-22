@@ -82,7 +82,13 @@ a {
     display: grid;
     grid-template-rows: repeat(3, 20%);
     justify-items: center;
+    align-items: center;
     align-content: space-evenly;
+}
+
+.logo_footer>img{
+    height: 20px;
+    opacity: 50%;
 }
 
 .footer__nav__list {

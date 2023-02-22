@@ -5,7 +5,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 50%;
     justify-content: center;
     align-content: center;
 
@@ -33,7 +33,12 @@
 }
 
 /*Mejorada, que muestre en rojo en caso que sea incorrecto en focus*/
-.form__input:invalid:focus{
+/* .form__input:invalid{
+    background-color: rgba(255, 0, 0, 0.055);
+    outline: 2px solid rgb(172, 0, 0);
+} */
+
+.form__input_insert:invalid{
     background-color: rgba(255, 0, 0, 0.055);
     outline: 2px solid rgb(172, 0, 0);
 }

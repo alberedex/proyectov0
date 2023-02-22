@@ -19,7 +19,7 @@
 
         <header class="header">
             <a class="header__logo--link" href="./browse.html" itemscope itemtype="https://schema.org/ImageObject">
-                <img class="header__logo" src="img/logo2.png" alt="" itemprop="contentUrl">
+                <img class="header__logo" src="img/logo2.png" alt="LogoPlayer" itemprop="contentUrl">
                 <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
                     <meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                 </div>
@@ -44,19 +44,19 @@
                 <input class="form__input" type="text" name="Nombre" id="Nombre" pattern="^[a-zA-Z]{3,}$" title="Introduca el nombre correcto" required>
 
                 <label for="Apellidos">Apellidos</label>
-                <input class="form__input" type="text" name="Apellidos" id="Apellidos" pattern="^[a-z A-Z]{3,}$" title="Introduca los Apellidos correctos" required>
+                <input class="form__input" type="text" name="Apellidos" id="Apellidos" pattern="^[a-z A-Z-]{3,}$" title="Introduca los Apellidos correctos" required>
                 
                 <label for="DNI">DNI</label>
-                <input class="form__input" type="text" name="DNI" id="DNI" pattern="^[0-9]{8}[a-zA-Z]{1}$" title="Introduca el DNI correcto" required>
+                <input class="form__input" type="text" name="DNI" id="DNI" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduca el DNI correcto" required>
 
                 <label for="email">Correo electronico</label>
                 <input class="form__input" type="email" name="email" id="email" title="Introduca el email correcto" required>
 
                 <label for="pass">Contraseña</label>
-                <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                <input class="form__input" type="password" name="pass" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula" required>
                 
                 <label for="passx2">Repite Contraseña</label>
-                <input class="form__input" type="password" name="passx2" id="passx2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra mayuscula" required>
+                <input class="form__input" type="password" name="passx2" id="passx2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$" title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula" required>
                 <div>
                     <input class="form__input" type="checkbox" name="chk__terminos" id="chk__terminos" required><label for="chk__terminos">  Acepto las <a href="#">condiciones</a> del uso del servicio<span class="input__required">*</span></label>
                 </div>
@@ -70,8 +70,8 @@
 
         <footer class="footer">
             <div itemscope itemtype="https://schema.org/ImageObject">
-                <a class="header__logo--link" href="./index.html">
-                    <img class="header__logo" src="img/logo2-white.png" alt="" itemprop="contentUrl">
+                <a class="header__logo--link logo_footer" href="./index.html">
+                    <img class="header__logo " src="img/logo2-white.png" alt="LogoPlayer" itemprop="contentUrl">
                 </a>
 
                 <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
@@ -93,12 +93,12 @@
             </ul>
             <ul class="footer__nav__list">
                 <li class="footer__social">Síguenos en nuestras redes</li>
-                <li class="footer__social"><a href="#"><img src="./img/facebook.png" alt=""></a></li>
-                <li class="footer__social"><a href="#"><img src="./img/instagram.png" alt=""></a></li>
-                <li class="footer__social"><a href="#"><img src="./img/twitter.png" alt=""></a></li>
-                <li class="footer__social"><a href="#"><img src="./img/youtube.png" alt=""></a></li>
+                <li class="footer__social"><a href="#"><img src="./img/facebook.png" alt="Facebook"></a></li>
+                <li class="footer__social"><a href="#"><img src="./img/instagram.png" alt="Instagram"></a></li>
+                <li class="footer__social"><a href="#"><img src="./img/twitter.png" alt="Twitter"></a></li>
+                <li class="footer__social"><a href="#"><img src="./img/youtube.png" alt="Youtube"></a></li>
             </ul>
-            <address itemscope itemtype="https://schema.org/Organization">
+            <!-- <address itemscope itemtype="https://schema.org/Organization">
                 <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                     <span itemprop="streetAddress">Calle Alberto Redondo, 5</span>
                     <span itemprop="telephone">+34-633945521</span>
@@ -107,7 +107,7 @@
                     <span itemprop="postalCode">13004</span>
                     <span itemprop="addressCountry">España</span>
                 </div>
-            </address>
+            </address> -->
             <span class="footer__copy">©2022/2023 - Alberto Redondo Sanchez - DIW</span>
         </footer>
     </div>
