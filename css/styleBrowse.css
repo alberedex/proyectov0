@@ -25,6 +25,7 @@
     flex-direction: row;
     padding: 0px;
     margin: 0px;
+    flex-wrap: wrap;
 }
 
 .article__figure:hover{
@@ -41,8 +42,8 @@
     padding: 0;
     margin: 0;
     margin-right: 5px;
-    width: 18%;
-    /* border: 1px solid red; */
+    width: 350px;
+
     display: flex;
     flex-direction: column;
 }
