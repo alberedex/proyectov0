@@ -31,8 +31,22 @@ html {
     /* z-index: 1; */
 }
 
+header,main,aside,footer{
+    padding: 1em;
+}
+
+/* header */
+
 a {
     text-decoration: none;
+}
+
+a:focus, button:focus,a:hover,button:hover{
+    text-decoration: underline;
+}
+
+input:focus{
+    background-color: rgb(84, 175, 255);
 }
 
 .header__nav__list {
@@ -71,7 +85,7 @@ a {
 }
 
 .body {
-    background-color: #b8b8b8;
+    background-color: #e0e0e0;
     min-height: 100vh;
 }
 
@@ -172,7 +186,7 @@ a {
     /* text-decoration: underline; */
 }
 
-a{
+/* a{
     color: white;
 }
-
+ */

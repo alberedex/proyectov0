@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Plataforma VideoSystem.">
     <title>Player - Serie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylePag.css">
@@ -23,7 +26,7 @@
             <div class="container-fluid">
                 <a class="header__logo--link navbar-brand" href="./browse.html" itemscope
                     itemtype="https://schema.org/ImageObject">
-                    <img class="header__logo" src="img/logo2.png" alt="" itemprop="contentUrl">
+                    <img class="header__logo" src="img/logo2.png" alt="Logo Player" itemprop="contentUrl">
                     <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
                         <meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                     </div>
@@ -114,90 +117,94 @@
             </ol>
         </nav>
 
-        <main class="main" id="mainPeliculas">
 
-            <section class="main__pelicula" itemscope itemtype="https://schema.org/Movie"
-                style="background-image: url(./img/theLastOfUs.jpg);">
-                <img itemprop="image" class="main__pelicula__logo" src="img/theLastOfUs_logo.jpg" alt="">
-                <ul class="main__figure__lists">
-                    <li itemprop="typicalAgeRange" class="figure__list">18+</li>
-                    <li itemprop="copyrightYear" class="figure__list">2022</li>
-                    <li itemprop="text" class="figure__list">Terror/Suspenso</li>
-                    <li itemprop="duration" content="T1H15M" class="figure__list">1 Temporada</li>
-                </ul>
-                <div class="main__pelicula__boton">
-                    <a href="#">
-                        <div class="boton__pelicula">▶</div>
-                    </a>
-                    <a href="#">
-                        <div class="boton__pelicula">+</div>
-                    </a>
-                </div>
-                <span class="main__figure__summary" itemprop="description">Joel y Ellie, dos personas conectadas por la
-                    brutalidad del mundo en el que viven, se ven obligados a enfrentarse a criaturas y asesinos
-                    despiadados, mientras viajan a través de un Estados Unidos posapocalíptico.</span>
-                <div class="main__figure__reparto">
-                    <h3 class="main__figure__reparto--title">Reparto</h3>
-                    <ul class="main__figure__lists figure__repartos" itemprop="actor" itemscope
-                        itemtype="https://schema.org/Person">
-                        <li class="main__figure__reparto" itemprop="name">Bella Ramsey</li>
-                        <li class="main__figure__reparto" itemprop="name">Pedro Pascal</li>
-                        <li class="main__figure__reparto" itemprop="name">Nick Offerman</li>
-                        <li class="main__figure__reparto" itemprop="name">Anna Torv</li>
-                    </ul>
-                </div>
 
-            </section>
-            <div class=" w-50 container d-flex flex-column justify-content-start gap-5 mt-5">
+        <section class="main__pelicula" itemscope itemtype="https://schema.org/Movie"
+            style="background-image: url(./img/theLastOfUs.jpg);">
+            <img itemprop="image" class="main__pelicula__logo" src="img/theLastOfUs_logo.jpg" alt="">
+            <ul class="main__figure__lists">
+                <li itemprop="typicalAgeRange" class="figure__list">18+</li>
+                <li itemprop="copyrightYear" class="figure__list">2022</li>
+                <li itemprop="text" class="figure__list">Terror/Suspenso</li>
+                <li itemprop="duration" content="T1H15M" class="figure__list">1 Temporada</li>
+            </ul>
+            <div class="main__pelicula__boton">
 
-                <select class="form-select">
-                    <option value="1" selected>Temporada 1</option>
-                    <option value="2">Temporada 2</option>
-                    <option value="3">Temporada 3</option>
-                </select>
+                <a href="./pelicula.html" class="boton__pelicula bi bi-play-fill"
+                    alt="Reproduccir Pelicula">Reproduccir</a>
 
-                <table class="table table-hover ">
-                    <thead>
-                        <tr>
-                            <th>Nº</th>
-                            <th>Episodio</th>
-                            <th>Duracion</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td>Cuando te pierdad en la oscuridad</td>
-                            <td>1H 20MIN</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>Infectados</td>
-                            <td>52MIN</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>Mucho mucho tiempo</td>
-                            <td>1H 15MIN</td>
-                        </tr>
-                        </tbdoy>
-                </table>
+                <a href="./pelicula.html" class="boton__pelicula bi bi-plus" alt="Añadir a mi lista">Mi Lista</a>
+
             </div>
+            <span class="main__figure__summary" itemprop="description">Joel y Ellie, dos personas conectadas por la
+                brutalidad del mundo en el que viven, se ven obligados a enfrentarse a criaturas y asesinos
+                despiadados, mientras viajan a través de un Estados Unidos posapocalíptico.</span>
+            <div class="main__figure__reparto">
+                <h3 class="main__figure__reparto--title">Reparto</h3>
+                <ul class="main__figure__lists figure__repartos" itemprop="actor" itemscope
+                    itemtype="https://schema.org/Person">
+                    <li class="main__figure__reparto" itemprop="name">Bella Ramsey</li>
+                    <li class="main__figure__reparto" itemprop="name">Pedro Pascal</li>
+                    <li class="main__figure__reparto" itemprop="name">Nick Offerman</li>
+                    <li class="main__figure__reparto" itemprop="name">Anna Torv</li>
+                </ul>
+            </div>
+
+        </section>
+        <div class=" w-50 container d-flex flex-column justify-content-start gap-5 mt-5">
+
+            <select class="form-select">
+                <option value="1" selected>Temporada 1</option>
+                <option value="2">Temporada 2</option>
+                <option value="3">Temporada 3</option>
+            </select>
+
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Episodio</th>
+                        <th>Duracion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Cuando te pierdad en la oscuridad</td>
+                        <td>1H 20MIN</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Infectados</td>
+                        <td>52MIN</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Mucho mucho tiempo</td>
+                        <td>1H 15MIN</td>
+                    </tr>
+                    </tbdoy>
+            </table>
+        </div>
+        <main class="main" id="mainPeliculas">
             <h1 class="main--title">Similares</h1>
             <section class="main__section">
                 <h2 class="section__title">Terror</h2>
                 <article class="section__article">
 
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -208,19 +215,23 @@
                 <article class="section__article">
 
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -230,23 +241,28 @@
                 <h2 class="section__title">Suspense</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg" alt=""></a>
+                        <a href="#"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -256,7 +272,7 @@
         <footer class="footer">
             <div itemscope itemtype="https://schema.org/ImageObject">
                 <a class="header__logo--link" href="./browse.html">
-                    <img class="header__logo" src="img/logo2-white.png" alt="" itemprop="contentUrl">
+                    <img class="header__logo" src="img/logo2-white.png" alt="Logo Player" itemprop="contentUrl">
                 </a>
 
                 <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">

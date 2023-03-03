@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Plataforma VideoSystem.">
     <title>Player - Browse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -23,7 +24,7 @@
             <div class="container-fluid">
                 <a class="header__logo--link navbar-brand" href="./browse.html" itemscope
                     itemtype="https://schema.org/ImageObject">
-                    <img class="header__logo" src="img/logo2.png" alt="" itemprop="contentUrl">
+                    <img class="header__logo" src="img/logo2.png" alt="Logo Player" itemprop="contentUrl">
                     <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
                         <meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
                     </div>
@@ -77,7 +78,7 @@
                     </ul>
                     <form class="d-flex mx-auto" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
                     <button class="button" type="submit">Cuenta</button>
                     <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -106,49 +107,55 @@
             </div>
         </nav>
 
-        <main class="main__Principal" id="main">
-            
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/1.jpg" class="d-block w-100" alt="Avengers endgame">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/2.jpg" class="d-block w-100" alt="Aladdín">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/3.jpg" class="d-block w-100" alt="Ant-Man y la Avispa">
-                    </div>
+
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="Avengers endgame">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="Aladdín">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="Ant-Man y la Avispa">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <main class="main__Principal" id="main">
             <div class="ad container">
-                <p class="text-uppercase text-muted fs-6">PUBLICIDAD</p>
-                <a href="https://www.sprintersports.com/"><img src="img/publi.png" alt="Publicidad" class='img-fluid' title="Bond publicidad Heineken!"></a>
+                <p class="text-uppercase fs-6">PUBLICIDAD</p>
+                <a href="https://www.sprintersports.com/"><img src="img/publi.png" alt="Publicidad" class='img-fluid'
+                        title="Bond publicidad Heineken!"></a>
             </div>
             <h1 class="main--title">Bienvenido Usuari@!</h1>
             <section class="main__section">
                 <h2 class="section__title">Peliculas</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png" alt="Pelicula que se llama Dementia13"></a>
+                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png"
+                                alt="Pelicula que se llama Dementia13"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
+                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png"
+                                alt="Pelicula Dementia13"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
+                        <a href="./pelicula.html"><img class="figure__img" src="img/caratula.png"
+                                alt="Pelicula Dementia13"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -158,19 +165,23 @@
                 <h2 class="section__title">Series</h2>
                 <article class="section__article">
                     <figure class="article__figure">
-                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg" alt="Serie The Last of Us"></a>
+                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg" alt="Serie The Last of Us"></a>
+                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg" alt="Serie The Last of Us"></a>
+                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                     <figure class="article__figure">
-                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg" alt="Serie The Last of Us"></a>
+                        <a href="./fichaSerie.html"><img class="figure__img" src="./img/caratula-serie.jpg"
+                                alt="Serie The Last of Us"></a>
                         <span class="figure__title">Titulo</span>
                     </figure>
                 </article>
@@ -181,7 +192,7 @@
     <footer class="footer">
         <div itemscope itemtype="https://schema.org/ImageObject">
             <a class="header__logo--link" href="./browse.html">
-                <img class="header__logo" src="img/logo2-white.png" alt="" itemprop="contentUrl">
+                <img class="header__logo" src="img/logo2-white.png" alt="Logo Player" itemprop="contentUrl">
             </a>
 
             <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
