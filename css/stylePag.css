@@ -1,21 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    
+
 }
+
 html {
     width: 100%;
     font-family: 'Sora', sans-serif;
-    
+
 }
 
 
 /* HEADER  */
 
 .header {
-    background-color: rgba(255, 255, 255, 0.767)!important;
+    background-color: rgba(255, 255, 255, 0.767) !important;
     /* position: sticky; */
     /* top: 0; */
     /* display: grid; */
@@ -27,11 +27,14 @@ html {
 
     width: 100%;
     height: 70px;
-    box-shadow: 0px 5px 10px; 
+    box-shadow: 0px 5px 10px;
     /* z-index: 1; */
 }
 
-header,main,aside,footer{
+header,
+main,
+aside,
+footer {
     padding: 1em;
 }
 
@@ -41,11 +44,14 @@ a {
     text-decoration: none;
 }
 
-a:focus, button:focus,a:hover,button:hover{
+a:focus,
+button:focus,
+a:hover,
+button:hover {
     text-decoration: underline;
 }
 
-input:focus{
+input:focus {
     background-color: rgb(84, 175, 255);
 }
 
@@ -55,7 +61,7 @@ input:focus{
     list-style: none;
     justify-content: center;
     margin: auto;
-    
+
 }
 
 .input--buscador {
@@ -72,7 +78,7 @@ input:focus{
     padding-left: 40px;
 }
 
-.nav__list>a{
+.nav__list>a {
     color: black;
 }
 
@@ -108,7 +114,7 @@ input:focus{
     /* overflow-wrap: break-word; */
 }
 
-.logo_footer>img{
+.logo_footer>img {
     height: 20px;
     opacity: 50%;
 }
@@ -131,7 +137,7 @@ input:focus{
     color: #8b8bff;
 }
 
-.footer__social{
+.footer__social {
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -155,11 +161,11 @@ input:focus{
 }
 
 
-.modal-backdrop{
+.modal-backdrop {
     --bs-backdrop-zindex: 1010;
 }
 
-.ad{
+.ad {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -179,7 +185,7 @@ input:focus{
     margin: 0;
 }
 
-.breadcrumb .active{
+.breadcrumb .active {
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(211, 211, 211);
@@ -190,3 +196,46 @@ input:focus{
     color: white;
 }
  */
+
+.en{
+    color:#333;
+}
+
+.es{
+    color:#00a1ff;
+}
+.check {
+    position: relative;
+    width: 50px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked:before{
+    background: #00a1ff;
+}
