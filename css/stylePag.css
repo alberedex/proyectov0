@@ -31,8 +31,8 @@ html {
     /* z-index: 1; */
 }
 
-header,
-main,
+
+
 aside,
 footer {
     padding: 1em;
@@ -134,7 +134,7 @@ input:focus {
 
 .footer__nav__list>li>a {
     text-decoration: none;
-    color: #8b8bff;
+    color: #9EB5FF;
 }
 
 .footer__social {

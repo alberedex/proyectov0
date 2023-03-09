@@ -5,16 +5,17 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-content: center;
 
-    margin: auto;
-    padding: 80px;
+    /* margin: auto; */
+    /* padding: 80px; */
+    padding: 50px;
     background-color: white;
     border-radius: 20px;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    /* margin-top: 100px; */
+    /* margin-bottom: 150px; */
     box-shadow: 4px 5px 10px;
    
 }
@@ -58,7 +59,7 @@
 }
 
 .input__required{
-    color: red;
+    color: rgb(126, 0, 0);
 }
 
 #form__message{

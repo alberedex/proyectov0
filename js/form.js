@@ -2,7 +2,7 @@
 const message = document.getElementById('form__message');
 
 const formulario = document.querySelector('form');
-if(message != undefined){
+if (message != undefined) {
     message.style.display = "none"
 }
 
@@ -21,12 +21,12 @@ formulario.addEventListener("submit",
 
 // Nueva funcionalidad
 function mostrarContrasena() {
-	var campo = document.getElementById("pass");
-	if (campo.type == "password") {
-		campo.type = "text";
-	} else {
-		campo.type = "password";
-	}
+    var campo = document.getElementById("pass");
+    if (campo.type == "password") {
+        campo.type = "text";
+    } else {
+        campo.type = "password";
+    }
 }
 
 
@@ -39,3 +39,53 @@ for (const input of inputs) {
         }
     });
 }
+
+let success = 0;
+
+let progress = document.getElementById('prog-bar');
+let form = document.forms.form;
+let cantidadForm = (form.length - 1);
+
+Array.from(inputs).forEach(element => {
+    element.addEventListener('change', function (params) {
+        success = 0;
+        Array.from(form).forEach(elementForm => {
+            if (elementForm.checkValidity()) {
+                success += 1;
+            }
+        });
+        //introducimos en porcentaje de inputs correctos
+        progress.style.width = ((success * 100) / cantidadForm) + "%";
+
+        progress.innerText = Math.trunc(((success * 100) / cantidadForm)) + "%";        
+    });    
+});
+
+form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    form.classList.add('was-validated');
+  }, false)
+
+
+// (() => {
+//     'use strict'
+  
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//     const forms = document.querySelectorAll('.needs-validation')
+  
+//     // Loop over them and prevent submission
+//     Array.from(forms).forEach(form => {
+//       form.addEventListener('submit', event => {
+//         if (!form.checkValidity()) {
+//           event.preventDefault()
+//           event.stopPropagation()
+//         }
+  
+//         form.classList.add('was-validated')
+//       }, false)
+//     })
+//   })();
