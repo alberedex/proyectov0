@@ -68,3 +68,19 @@ main{
 .main--title{
     text-align: center;
 }
+
+
+/* .carousel-item>img:first-child {
+
+    box-shadow: #000000 0px -150px 150px -15px inset;
+    box-shadow: inset 0 0 10px 10px #000;
+} */
+
+.carousel-item{
+    box-shadow: inset 0 0 10px 10px #000!important;
+}
+
+.carousel button>span,
+.carousel h2 {
+    filter: drop-shadow(5px 5px 15px #000000);
+}

@@ -5,7 +5,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    /* width: 60%; */
     justify-content: center;
     align-content: center;
 
@@ -67,6 +67,7 @@
     background-color: #FF331F;
     padding: 5px;
     text-align: center;
+    color: white;
 }
 
 .body{

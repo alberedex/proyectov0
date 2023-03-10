@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg sticky-top bg-light bg-opacity-75">
             <div class="container-fluid">
                 <a class="header__logo--link navbar-brand" href="./browse.html" itemscope
-                    itemtype="https://schema.org/ImageObject">
+                    itemtype="https://schema.org/ImageObject" >
                     <img class="header__logo" src="img/logo2.png" alt="Logo Player" itemprop="contentUrl">
                     <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
                         <meta itemprop="url" content="https://creativecommons.org/licenses/by-nc-sa/4.0/">
@@ -45,7 +45,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./browse.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./browse.html" >Inicio</a>
                         </li>
 
                         <li class="nav-item dropdown ">
@@ -82,7 +82,7 @@
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     <button class="button" type="submit">Cuenta</button>
-                    <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                         Cerrar Sesión
                     </button>
                     <!-- Modal -->
@@ -108,11 +108,11 @@
             </div>
         </nav>
 
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="barra de navegacion">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./browse.html">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="./movies.html">Peliculas</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Dementia 13</li>
+                <li class="breadcrumb-item"><a href="./movies.html" >Peliculas</a></li>
+                <li class="breadcrumb-item active" aria-current="page" >Dementia 13</li>
             </ol>
         </nav>
 
@@ -124,24 +124,25 @@
             <img itemprop="image" class="main__pelicula__logo" src="img/pelicula_logo.png"
                 alt="Logo Pelicula Dementia13">
             <ul class="main__figure__lists">
-                <li itemprop="typicalAgeRange" class="figure__list">16+</li>
-                <li itemprop="copyrightYear" class="figure__list">1963</li>
-                <li itemprop="text" class="figure__list">Terror/Suspenso</li>
-                <li itemprop="duration" content="T1H15M" class="figure__list">1h 15m</li>
+                <li itemprop="typicalAgeRange" class="figure__list" tabindex="0">16+</li>
+                <li itemprop="copyrightYear" class="figure__list" tabindex="0">1963</li>
+                <li itemprop="text" class="figure__list" tabindex="0">Terror/Suspenso</li>
+                <li itemprop="duration" content="T1H15M" class="figure__list" tabindex="0">1h 15m</li>
             </ul>
             <div class="main__pelicula__boton">
 
-                <a href="./pelicula.html" class="boton__pelicula bi bi-play-fill" alt="Reproduccir Pelicula"
-                    type="button" data-bs-toggle="modal" data-bs-target="#MostrarVideo" id="btn-play">Reproduccir</a>
+                <a href="./pelicula.html" class="boton__pelicula bi bi-play-fill"
+                    data-bs-toggle="modal" data-bs-target="#MostrarVideo" id="btn-play" tabindex="0">Reproduccir</a>
 
-                <a href="./pelicula.html" class="boton__pelicula bi bi-plus" alt="Añadir a mi lista">Mi Lista</a>
+                <a href="./pelicula.html" class="boton__pelicula bi bi-plus" tabindex="0">Mi Lista</a>
+                <a href="https://www.imdb.com/title/tt0056983/" class="boton__pelicula bi bi-box-arrow-up-right" tabindex="0">&nbsp;&nbsp;IMDb</a>
 
             </div>
-            <span class="main__figure__summary" itemprop="description">Anualmente, el matrimonio Haloran cumple con
+            <p class="main__figure__summary" itemprop="description" tabindex="0">Anualmente, el matrimonio Haloran cumple con
                 un siniestro ritual:
                 rememora en Irlanda la muerte de Kethleen, su hija. Este año, sin embargo, un asesino está
-                suelto en las inmediaciones del castillo Haloran llevando a cabo una terrible carnicería.</span>
-            <div class="main__figure__reparto">
+                suelto en las inmediaciones del castillo Haloran llevando a cabo una terrible carnicería.</p>
+            <div class="main__figure__reparto" tabindex="0">
                 <h3 class="main__figure__reparto--title">Reparto</h3>
                 <ul class="main__figure__lists figure__repartos" itemprop="actor" itemscope
                     itemtype="https://schema.org/Person">
@@ -152,94 +153,82 @@
                 </ul>
             </div>
 
-            <div class="modal fade" id="MostrarVideo" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-                role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div id='modal-bodyVideo' class="modal-body mb-0 p-0">
-                            <video id='video' src="./video/Dementia13.mp4" controls poster="./img/dementia1307.jpg" class="w-100">
-                                Tu navegador no admite el video
-                            </video>
-                        </div>
-                        <div class="modal-footer justify-content-right">
-                            <button type="button" id='btnClose' class="btn btn-outline-primary btn-rounded btn-md ml-4"
-                                data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
+            
+        </section>
+        
+        <video id='video' src="./video/Dementia13.mp4" controls poster="./img/dementia1307.jpg" class="container w-50">
+            Tu navegador no admite el video
+        </video>
+        
+        <main class="main" id="mainPeliculas">
+            <h1 class="main--title">Similares</h1>
+            <div class="main__section">
+                <h2 class="section__title">Terror</h2>
+                <div class="section__article">
+
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
+                        <span class="figure__title">Dementia13</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
+                        <span class="figure__title">Dementia13</span>
+                    </figure>
+                    <figure class="article__figure">
+                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
+                        <span class="figure__title">Dementia13</span>
+                    </figure>
                 </div>
             </div>
 
-        </section>
-
-        <main class="main" id="mainPeliculas">
-            <h1 class="main--title">Similares</h1>
-            <section class="main__section">
-                <h2 class="section__title">Terror</h2>
-                <article class="section__article">
-
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                    <figure class="article__figure">
-                        <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
-                    </figure>
-                </article>
-            </section>
-
-            <section class="main__section">
+            <div class="main__section">
                 <h2 class="section__title">Comedia</h2>
-                <article class="section__article">
+                <div class="section__article">
 
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
-                </article>
-            </section>
+                </div>
+            </div>
 
-            <section class="main__section">
+            <div class="main__section">
                 <h2 class="section__title">Suspense</h2>
-                <article class="section__article">
+                <div class="section__article">
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
                     <figure class="article__figure">
                         <a href="#"><img class="figure__img" src="img/caratula.png" alt="Pelicula Dementia13"></a>
-                        <span class="figure__title">Titulo</span>
+                        <span class="figure__title">Dementia13</span>
                     </figure>
-                </article>
-            </section>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">

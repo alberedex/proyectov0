@@ -95,6 +95,25 @@ input:focus {
     min-height: 100vh;
 }
 
+/**
+*   En caso que pulse cambio de tema, aplica estos estilos
+*/
+.mainCA{
+    background-color: black;
+}
+
+.mainCA h2,.mainCA h1,.mainCA p{
+    color: white;
+}
+
+.bg-dark a{
+    color: white!important;
+}
+
+.bg-dark img,.bg-dark .btn-outline-dark{
+    filter: invert(100);
+}
+
 /* FOOTER */
 
 .footer {

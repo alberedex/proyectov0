@@ -21,7 +21,7 @@
 
         <nav class="navbar navbar-expand-lg sticky-top bg-light bg-opacity-75">
             <div class="container-fluid">
-                <a class="header__logo--link navbar-brand" href="./browse.html" itemscope
+                <a class="header__logo--link navbar-brand" href="./index.html" itemscope
                     itemtype="https://schema.org/ImageObject">
                     <img class="header__logo" src="img/logo2.png" alt="Logo Player" itemprop="contentUrl">
                     <div itemprop="acquireLicensePage" content="CC BY-NC-SA 4.0">
@@ -56,85 +56,103 @@
 
         <main class="d-flex justify-content-center align-items-center">
 
-            <form class="form" id="form" method="get" action="./browse.html" needs-validation novalidate>
+            <form class="form" id="form" method="get" action="./browse.html" novalidate>
                 <h1 class="form__title">Registro</h1>
-                <div class="progress" role="progressbar" aria-label="Barra de progreso del Registro" aria-valuenow="0" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress" role="progressbar" aria-label="Barra de progreso del Registro" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar" id='prog-bar' style="width: 0%"></div>
                 </div>
-                <label for="user" class="form-label">Nombre de usuario</label>
-                <input class="form__input" type="text" name="user" id="user" pattern="^[a-zA-Z]{3,}$"
-                    title="Introduca el nombre de usuario correcto" required>
-                <div class="invalid-feedback">Incorrecto, debe contener solo letras, sin espacios y mas de 3 caracteres</div>
-                <div class="valid-feedback">Correcto</div>
 
-                <label for="Nombre" class="form-label">Nombre</label>
-                <input class="form__input form-control" type="text" name="Nombre" id="Nombre" pattern="^[a-zA-Z]{3,}$"
-                    title="Introduca el nombre correcto" required>
-                <div class="invalid-feedback">Incorrecto, debe contener solo letras, sin espacios y mas de 3 caracteres</div>
-                <div class="valid-feedback">Correcto</div>
+                <div class="col-md-12">
+                    <label for="user" class="form-label">Nombre de usuario</label>
+                    <input class="form__input form-control" type="text" name="user" id="user" pattern="^[a-zA-Z]{3,}$"
+                        title="Introduca el nombre de usuario correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe contener solo letras, sin espacios y mas de 3
+                        caracteres</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input class="form__input form-control" type="text" name="Nombre" id="Nombre"
+                        pattern="^[a-zA-Z]{3,}$" title="Introduca el nombre correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe contener solo letras, sin espacios y mas de 3
+                        caracteres</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
 
-
-                <label for="Apellidos" class="form-label">Apellidos</label>
-                <input class="form__input form-control" type="text" name="Apellidos" id="Apellidos"
-                    pattern="^[a-z A-Z-]{3,}$" title="Introduca los Apellidos correctos" required>
-                <div class="invalid-feedback">Incorrecto, debe contener solo letras, guion y mas de 3 caracteres</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="DNI" class="form-label">DNI</label>
-                <input class="form__input form-control" type="text" name="DNI" id="DNI"
-                    pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))"
-                    title="Introduca el DNI correcto" required>
-                <div class="invalid-feedback">Incorrecto, el DNI no cumple el patron deseado xx</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="email" class="form-label">Correo electronico</label>
-                <input class="form__input form-control" type="email" name="email" id="email"
-                    title="Introduca el email correcto" required>
-                <div class="invalid-feedback">Incorrecto, no cumple que sea un email xxx@xxx.com</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="date" class="form-label">Fecha de nacimiento</label>
-                <input class="form__input form-control" type="date" name="date" id="date"
-                    title="Introduca la fecha correcto" required>
-                <div class="invalid-feedback">Incorrecto, debe introducir una fecha de nacimiento</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="localidad" class="form-label">Localidad</label>
-                <input class="form__input form-control" type="text" name="localidad" id="localidad"
-                    title="Introduca la localidad correcto" required>
-                <div class="invalid-feedback">Incorrecto, debe incluir Localidad</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="cardNum" class="form-label">Tarjeta de credito</label>
-                <input class="form__input form-control" type="text" name="cardNum" id="cardNum"
-                    title="Introduca el numero de tarjeta" pattern="^[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$" required>
-                <div class="invalid-feedback">Incorrecto, debe introducir el siguiente patron: XXXX XXXX XXXX XXXX</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="pass" class="form-label">Contraseña</label>
-                <input class="form__input form-control" type="password" name="pass" id="pass"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$"
-                    title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula"
-                    required autocomplete="on">
-                <div class="invalid-feedback">Incorrecto, debe tener 4-16 caracteres, un numero, letra mayúscula y letra minuscula</div>
-                <div class="valid-feedback">Correcto</div>
-
-                <label for="passx2" class="form-label">Repite Contraseña</label>
-                <input class="form__input form-control" type="password" name="passx2" id="passx2"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$"
-                    title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula"
-                    required autocomplete="on">
-                <div class="invalid-feedback">Incorrecto, debe tener 4-16 caracteres, un numero, letra mayúscula y letra minuscula</div>
-                <div class="valid-feedback">Correcto</div>
+                    <label for="Apellidos" class="form-label">Apellidos</label>
+                    <input class="form__input form-control" type="text" name="Apellidos" id="Apellidos"
+                        pattern="^[a-z A-Z-]{3,}$" title="Introduca los Apellidos correctos" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe contener solo letras, guion y mas de 3 caracteres
+                    </div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="DNI" class="form-label">DNI</label>
+                    <input class="form__input form-control" type="text" name="DNI" id="DNI"
+                        pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))"
+                        title="Introduca el DNI correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, el DNI no cumple el patron deseado xx</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Correo electronico</label>
+                    <input class="form__input form-control" type="email" name="email" id="email"
+                        title="Introduca el email correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, no cumple que sea un email xxx@xxx.com</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="date" class="form-label">Fecha de nacimiento</label>
+                    <input class="form__input form-control" type="date" name="date" id="date"
+                        title="Introduca la fecha correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe introducir una fecha de nacimiento</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="localidad" class="form-label">Localidad</label>
+                    <input class="form__input form-control" type="text" name="localidad" id="localidad"
+                        title="Introduca la localidad correcto" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe incluir Localidad</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="cardNum" class="form-label">Tarjeta de credito</label>
+                    <input class="form__input form-control" type="text" name="cardNum" id="cardNum"
+                        title="Introduca el numero de tarjeta" pattern="^[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}$" required>
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe introducir el siguiente patron: XXXX XXXX XXXX XXXX
+                    </div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="pass" class="form-label">Contraseña</label>
+                    <input class="form__input form-control" type="password" name="pass" id="pass"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$"
+                        title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula"
+                        required autocomplete="on">
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe tener 4-16 caracteres, un numero, letra mayúscula y
+                        letra minuscula</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
+                <div class="col-md-12">
+                    <label for="passx2" class="form-label">Repite Contraseña</label>
+                    <input class="form__input form-control" type="password" name="passx2" id="passx2"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$"
+                        title="Introduca la contraseña correcto 4-16 caracteres, un numero, letra mayúscula y letra minuscula"
+                        required autocomplete="on">
+                    <div class="invalid-feedback" tabindex="0">Incorrecto, debe tener 4-16 caracteres, un numero, letra mayúscula y
+                        letra minuscula</div>
+                    <div class="valid-feedback">Correcto</div>
+                </div>
                 <div>
                     <input class="form__input" type="checkbox" name="chk__terminos" id="chk__terminos" required><label
                         for="chk__terminos"> Acepto las <a href="#">condiciones</a> del uso del servicio<span
                             class="input__required">*</span></label>
-                    <div class="invalid-feedback">Debe aceptar las condiciones de uso</div>
+                    <div class="invalid-feedback" tabindex="0">Debe aceptar las condiciones de uso</div>
                     <div class="valid-feedback">Has aceptado las condiciones</div>
                 </div>
-                <div id="form__message"></div>
+                <div id="form__message">Introduca mismo contraseña</div>
 
                 <input class="button form__button" type="submit" value="Crear cuenta" id="submit" name="submit">
                 <a class="form__button" href="./inicioSesion.html">Iniciar Sesion</a>

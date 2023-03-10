@@ -1,19 +1,10 @@
 
-peliculas = document.getElementById("mainPeliculas");
-principal = document.getElementById("main");
-if(peliculas != undefined){
-    peliculas.style.display = "none";
+let main = document.getElementById('main');
+let nav = document.getElementById('nav');
+
+function cambioTema(){
+    main.classList.toggle("mainCA");
+    nav.classList.toggle("bg-dark");
 }
 
 
-linkPeliculas = document.getElementById("link__peliculas");
-
-function visibilidad(elem){
-    contenedor = document.getElementById(elem);
-
-    principal.style.display = "none";
-    peliculas.style.display = "none";
-
-    
-    contenedor.style.display = "block";
-}
