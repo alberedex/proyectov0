@@ -6,8 +6,6 @@ if (message != undefined) {
     message.style.display = "none"
 }
 
-message.style.display = "none";
-
 formulario.addEventListener("submit",
     function (event) {
         let pass = document.getElementById('pass').value;
@@ -46,30 +44,12 @@ let success = 0;
 
 let progress = document.getElementById('prog-bar');
 let form = document.forms.form;
-let cantidadForm = (form.length - 1);
+let cantidadForm;
 
-Array.from(inputs).forEach(element => {
-    element.addEventListener('change', function (params) {
-        success = 0;
-        Array.from(form).forEach(elementForm => {
-            if (elementForm.checkValidity()) {
-                success += 1;
-            }
-        });
-        //introducimos en porcentaje de inputs correctos
-        let num = ((success * 100) / cantidadForm);
+if(form != undefined){
+    cantidadForm = (form.length - 1);
 
-        if(num <= 10){
-            num = 0;
-        }else if(num > 100){
-            num = 100;
-        }
-        progress.style.width = num + "%";
-
-        progress.innerText = Math.trunc(num) + "%";
-    });
-});
-
+    
 form.addEventListener('submit', event => {
    
     let isValid = true;
@@ -78,8 +58,6 @@ form.addEventListener('submit', event => {
     if (!this.user.checkValidity()) {
         isValid = false;
         elementFocus = user;
-        console.log(user);
-        console.log(this.user);
     }
     if (!this.Nombre.checkValidity()) {
         isValid = false;
@@ -112,8 +90,6 @@ form.addEventListener('submit', event => {
         isValid = false;
     }
 
-    //  if (!form.checkValidity()) {
-    // }
     if (!isValid) {
         event.preventDefault();
         event.stopPropagation();
@@ -122,3 +98,26 @@ form.addEventListener('submit', event => {
 
     form.classList.add('was-validated');
 }, false)
+}
+
+Array.from(inputs).forEach(element => {
+    element.addEventListener('change', function (params) {
+        success = 0;
+        Array.from(form).forEach(elementForm => {
+            if (elementForm.checkValidity()) {
+                success += 1;
+            }
+        });
+        //introducimos en porcentaje de inputs correctos
+        let num = ((success * 100) / cantidadForm);
+
+        if(num <= 10){
+            num = 0;
+        }else if(num > 100){
+            num = 100;
+        }
+        progress.style.width = num + "%";
+
+        progress.innerText = Math.trunc(num) + "%";
+    });
+});

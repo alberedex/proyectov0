@@ -1,32 +1,30 @@
-.main{
+.main {
     margin: 0;
+    min-height: 5000px !important;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
-    /* width: 60%; */
     justify-content: center;
     align-content: center;
 
-    /* margin: auto; */
-    /* padding: 80px; */
     padding: 50px;
     background-color: white;
     border-radius: 20px;
-    /* margin-top: 100px; */
-    /* margin-bottom: 150px; */
+
     box-shadow: 4px 5px 10px;
-   
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.form__title{
-    font-weight:bold;
+.form__title {
+    font-weight: bold;
     text-align: center;
     font-size: 32px;
 }
 
-.form__button{
+.form__button {
     border: 0px;
     width: 100%;
     margin-top: 10px;
@@ -39,17 +37,18 @@
     outline: 2px solid rgb(172, 0, 0);
 } */
 
-.form__input_insert:invalid{
+.form__input_insert:invalid {
     background-color: rgba(255, 0, 0, 0.055);
     outline: 2px solid rgb(172, 0, 0);
 }
 
-.form__input:valid{
+.form__input:valid {
     background-color: rgba(0, 255, 21, 0.055);
     outline: 2px solid rgb(0, 121, 10);
 }
 
-.form__input,.pass__img>img{
+.form__input,
+.pass__img>img {
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
@@ -58,11 +57,11 @@
 
 }
 
-.input__required{
+.input__required {
     color: rgb(126, 0, 0);
 }
 
-#form__message{
+#form__message {
     border-radius: 20px;
     background-color: #FF331F;
     padding: 5px;
@@ -70,17 +69,17 @@
     color: white;
 }
 
-.body{
+.body {
     background-image: linear-gradient(to right, #3626a7, #6c35bd, #9a46d2, #c659e6, #f26df9);
 }
 
-.form__pass{
+.form__pass {
     display: grid;
     grid-template-columns: 87% 10%;
     align-items: center;
 }
 
-.pass__img>img{
+.pass__img>img {
     width: 40px;
     background-color: #e0e0e0;
 }
